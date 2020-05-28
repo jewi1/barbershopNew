@@ -1,0 +1,41 @@
+.social__title {
+  display: none;
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+}
+
+.social__link {
+  display: block;
+  border: 1px solid #3e3e3e;
+}
+
+.social__link--vkontakte {
+  padding-left: 42px;
+  padding-right: 40px;
+  padding-top: 36px;
+  padding-bottom: 37px;
+
+  border-right: none;
+}
+
+.social__link--facebook {
+  padding-left: 44px;
+  padding-right: 41px;
+  padding-top: 28px;
+  padding-bottom: 32px;
+
+  border-right: none;
+}
+
+.social__link--instagram {
+  padding-left: 37px;
+  padding-right: 34px;
+  padding-top: 31px;
+  padding-bottom: 32px;
+}
