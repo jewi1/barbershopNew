@@ -14,8 +14,8 @@
       <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="226" height="30"
         alt="Логотип Барбершопа">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
@@ -36,7 +36,16 @@
         </ul>
         <ul class="main-nav__list user-list">
           <li class="user-list__item">
-            <a class="user-list__login" href="login.html">Войти</a>
+            <a class="user-list__login" href="login.html">
+              <svg class="user-list__login-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
+                height="16">
+                <title>login</title>
+                <polygon points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7" fill: #ffffff />
+                <polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0" fill:
+                  #ffffff />
+              </svg>
+              Войти
+            </a>
           </li>
         </ul>
       </div>
@@ -193,10 +202,40 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__contacts contacts">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__contacts contacts">
+        <b class="contacts__title">Барбершлп "Бородинский"</b>
+        <p class="contacts__text">
+          г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+          <a class="contacts__phone" href="tel:+78125556666">
+            <span class="contacts__phone-mobile">Тел.:</span> + (812) 555-66-66
+          </a>
+        </p>
+      </div>
+      <div class="page-footer__social social">
+        <b class="social__title">Давайте дружить!</b>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com">Мы в Вконтакте</a>
+          </li>
 
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://facebook.com">Мы в фейсбуке</a>
+          </li>
+
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://instagram.com">Мы в Инстаграме</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="button copyright__link" href="https://htmlacademy.ru">HTML Academy</a>
+      </div>
     </div>
   </footer>
+
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
