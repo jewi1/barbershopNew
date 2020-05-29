@@ -113,26 +113,33 @@
             <div class="advantages__image advantages__image--fast">
               <img src="img/advantages-1.svg" alt="Быстро" width="95" height="94">
             </div>
-            <h3 class="advantages__title">Быстро</h3>
-            <p class="advantages__description">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы -
-              счастливый
-              обладатель стильной стрижки минутки.</p>
+            <div class="advantages__text">
+              <h3 class="advantages__title">Быстро</h3>
+              <p class="advantages__description">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы -
+                счастливый
+                обладатель стильной стрижки минутки.</p>
+            </div>
           </li>
           <li class="advantages__item advantages__item--cool slider-item">
             <div class="advantages__image advantages__image--cool">
               <img src="img/advantages-2.svg" alt="Круто" width="95" height="88">
             </div>
-            <h3 class="advantages__title">Круто</h3>
-            <p class="advantages__description">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или
-              кино. Во всяком случае внешне.</p>
+            <div class="advantages__text">
+              <h3 class="advantages__title">Круто</h3>
+              <p class="advantages__description">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или
+                кино. Во всяком случае внешне.</p>
+            </div>
           </li>
           <li class="advantages__item advantages__item--price slider-item">
             <div class="advantages__image advantages__image--price">
               <img src="img/advantages-3.svg" alt="Дорого" width="95" height="91">
             </div>
-            <h3 class="advantages__title">Дорого</h3>
-            <p class="advantages__description">Наши мастера - профессионалы своего дела и не могут стоить дёшево. К тому
-              же, разве цена не даёт определённый статус?</p>
+            <div class="advantages__text">
+              <h3 class="advantages__title">Дорого</h3>
+              <p class="advantages__description">Наши мастера - профессионалы своего дела и не могут стоить дёшево. К
+                тому
+                же, разве цена не даёт определённый статус?</p>
+            </div>
           </li>
         </ul>
         <p class="advantages__toggles slider__toggles">
@@ -141,11 +148,10 @@
           <label class="advantages__toggle" for="advantages__input--3"></label>
         </p>
       </div>
-      <svg class="advantages__triangle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 34.07" width="100%"
-        height="34">
-        <title>advantages-triangle</title>
-        <polygon points="320 34.07 160 34.07 320 0 320 34.07" style="fill:#fff" />
-        <polygon points="0 34.07 160 34.07 0 0 0 34.07" style="fill:#fff" />
+      <svg class="advantages__triangle" version="1.1" xml:space="preserve" viewBox="0 0 100 160"
+        preserveAspectRatio="none" width="100%" height="34">
+        <polygon points="0,0 50.1,160 50.1,220 0,220 0,160"></polygon>
+        <polygon points="49.9,160 100,0 100,160 100,220 49.9,220"></polygon>
       </svg>
     </section>
     <section class="news">
@@ -183,14 +189,12 @@
         <input class="visually-hidden" id="reviews__input--2" type="radio" name="reviews">
         <input class="visually-hidden" id="reviews__input--3" type="radio" name="reviews">
         <h2 class="reviews__title">Отзывы о нас</h2>
-        <a class="reviews__write button" href=""></a>
+        <a class="reviews__write button" href="#">Оставить свой</a>
         <div class="reviews__list slider__list">
           <blockquote class="reviews__item slider__item">
             <div class="reviews__wrapper--image">
-              <p class="reviews__author-picture">
-                <img class="reviews__author-image" src="img/picture-travis.jpg" width="50" height="33"
-                  alt="Фото Тревиса Баркера">
-              </p>
+              <img class="reviews__author-image" src="img/picture-travis.jpg" width="50" height="33"
+                alt="Фото Тревиса Баркера">
             </div>
             <div class="reviews__wrapper--text">
               <cite class="reviews__author-name">Тревис Баркер</cite>
@@ -201,10 +205,8 @@
           </blockquote>
           <blockquote class="reviews__item slider__item">
             <div class="reviews__wrapper--image">
-              <p class="reviews__author-picture">
-                <img class="reviews__author-image" src="img/picture-travis.jpg" width="50" height="33"
-                  alt="Фото Джона Смита">
-              </p>
+              <img class="reviews__author-image" src="img/picture-travis.jpg" width="50" height="33"
+                alt="Фото Джона Смита">
             </div>
             <div class="reviews__wrapper--text">
               <cite class="reviews__author-name">Джон Смит</cite>
@@ -213,18 +215,28 @@
           </blockquote>
           <blockquote class="reviews__item slider__item">
             <div class="reviews__wrapper--image">
-              <p class="reviews__author-picture">
-                <img class="reviews__author-image" src="img/picture-travis.jpg" width="50" height="33"
-                  alt="Фото Ивана Бородайло">
-              </p>
+              <img class="reviews__author-image" src="img/picture-travis.jpg" width="50" height="33"
+                alt="Фото Ивана Бородайло">
             </div>
             <div class="reviews__wrapper--text">
               <cite class="reviews__author-name">Иван Бородайло</cite>
               <p class="reviews__text">В Бородинском ваша борода в надёжных руках!</p>
             </div>
           </blockquote>
-          <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-          <button class="reviews__next" type="button">Следующий отзыв</button>
+          <button class="reviews__prev" type="button">
+            <span class="visually-hidden">Предыдущий отзыв</span>
+            <svg class="reviews__arrow--left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12">
+              <title>arrow-left</title>
+              <polygon points="12 12 0 6 12 0 12 12" style="fill:#000" />
+            </svg>
+          </button>
+          <button class="reviews__next" type="button">
+            <span class="visually-hidden">Следующий отзыв</span>
+            <svg class="reviews__arrow--right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12">
+              <title>arrow-left</title>
+              <polygon points="12 12 0 6 12 0 12 12" style="fill:#000" />
+            </svg>
+          </button>
         </div>
         <p class="reviews__toggles slider__toggles">
           <label class="reviews__toggle" for="reviews__input--1"></label>
@@ -247,7 +259,7 @@
         <p class="contacts__text">
           г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
           <a class="contacts__phone" href="tel:+78125556666">
-            <span class="contacts__phone-mobile">Тел.:</span> + (812) 555-66-66
+            <span class="contacts__phone-mobile">Тел.:</span> +7 (812) 555-66-66
           </a>
         </p>
       </div>
