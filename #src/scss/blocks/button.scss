@@ -27,3 +27,9 @@
     color: rgba($color: #000000, $alpha: 0.3);
   }
 }
+
+@media (min-width: 768px) {
+  .button {
+    width: 158px;
+  }
+}

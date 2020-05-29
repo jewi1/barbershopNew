@@ -112,3 +112,149 @@
     height: 40px;
   }
 }
+
+@media (min-width: 768px) {
+  .reviews {
+    width: auto;
+    margin: 0;
+  }
+
+  .reviews__wrapper {
+    position: relative;
+
+    width: 640px;
+    margin: 0 auto;
+  }
+
+  .reviews__title {
+    text-align: left;
+  }
+
+  .reviews__write {
+    position: absolute;
+
+    top: -10px;
+    right: 0;
+  }
+
+  .reviews__item {
+    width: 540px;
+    margin: 0 auto;
+
+    border: 1px solid #e5ddd5;
+
+    padding-left: 30px;
+    padding-right: 30px;
+
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .reviews__wrapper--image {
+    width: 80px;
+
+    margin-right: 30px;
+  }
+
+  .reviews__author-image {
+    width: 80px;
+
+    border-radius: 50%;
+  }
+
+  .reviews__wrapper--text {
+    width: 360px;
+  }
+
+  .reviews__triangle {
+    display: none;
+  }
+
+  .reviews__list {
+    position: relative;
+  }
+
+  .reviews__prev {
+    position: absolute;
+    top: 0;
+
+    width: 48px;
+    height: 173px;
+    background-color: transparent;
+    border: 1px solid #e5ddd5;
+    border-right: none;
+  }
+
+  .reviews__next {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 48px;
+    height: 173px;
+    background-color: transparent;
+    border: 1px solid #e5ddd5;
+    border-left: none;
+  }
+
+  .reviews__arrow--right {
+    transform: rotate(180deg);
+  }
+
+  .reviews__toggles {
+    top: -5px;
+
+    background-color: #ffffff;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .reviews__wrapper {
+    width: 960px;
+  }
+
+  .reviews__item {
+    width: 818px;
+    padding: 0;
+    border: none;
+  }
+
+  .reviews__wrapper--image {
+    position: relative;
+    height: 173.1px;
+    width: 247px;
+    margin-right: 0;
+    border-right: none;
+    bottom: -2px;
+  }
+
+  .reviews__author-image {
+    height: 172px;
+    width: 246px;
+    border-radius: 0;
+  }
+
+  .reviews__wrapper--text {
+    width: 420px;
+    min-height: 119px;
+    border: 1px solid #e5ddd5;
+    padding-left: 68px;
+    padding-right: 78px;
+    padding-top: 31px;
+    padding-bottom: 21.1px;
+  }
+
+  .reviews__toggles {
+    margin-top: 40px;
+  }
+
+  .reviews__prev {
+    border-right: 1px solid #e5ddd5;
+  }
+
+  .reviews__next {
+    border-left: 1px solid #e5ddd5;
+  }
+}

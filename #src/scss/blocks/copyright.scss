@@ -9,3 +9,13 @@
 .copyright__link {
   color: #ffffff;
 }
+
+@media (min-width: 768px) {
+  .copyright {
+    margin-left: auto;
+  }
+
+  .copyright__text {
+    margin-top: 0;
+  }
+}
