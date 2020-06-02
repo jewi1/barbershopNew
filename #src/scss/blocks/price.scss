@@ -1,0 +1,189 @@
+.price {
+  width: 320px;
+  margin: 0 auto;
+
+  background-color: #353535;
+  padding-bottom: 20px;
+}
+
+.price__title {
+  margin: 0;
+  text-align: center;
+
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.price__list {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.price__name {
+  font-weight: 700;
+}
+
+.price__time {
+  width: 278px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #484848;
+}
+
+.price__clock {
+  padding-left: 20px;
+}
+
+.price__work-time {
+  margin-left: 35px;
+}
+
+@media (max-width: 767px) {
+  .price__number {
+    display: none;
+  }
+
+  .price__name {
+    display: block;
+  }
+
+  .price__option {
+    display: block;
+  }
+
+  .price__money {
+    vertical-align: top;
+    padding-bottom: 25px;
+  }
+
+  .price__list {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .price--hidden {
+    display: none;
+  }
+
+  .price {
+    width: auto;
+    margin: 0;
+  }
+
+  .price__wrapper {
+    width: 640px;
+    margin: 0 auto;
+  }
+
+  .price__title {
+    text-align: left;
+  }
+
+  .price__list {
+    border-collapse: collapse;
+    border: 1px solid #4a4a4a;
+
+    margin-bottom: 9px;
+  }
+
+  .price__list td {
+    border: 1px solid #4a4a4a;
+    height: 54px;
+  }
+
+  .price__number {
+    width: 70px;
+    text-align: center;
+  }
+
+  .price__name {
+    width: 228px;
+    padding-left: 20px;
+  }
+
+  .price__option {
+    width: 138px;
+    padding-left: 20px;
+  }
+
+  .price__money {
+    width: 139px;
+    padding-left: 20px;
+  }
+
+  .price__time {
+    width: auto;
+  }
+
+  .price__work-time {
+    font-size: 30px;
+    line-height: 27px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    margin-left: 87px;
+  }
+
+  .price__work-time br {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .price__wrapper {
+    width: 960px;
+  }
+
+  .price__title {
+    text-align: left;
+    font-size: 40px;
+  }
+
+  .price__wrapper--flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .price__list {
+    width: 628px;
+  }
+
+  .price__time {
+    width: 267px;
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+  }
+
+  .price__work-time {
+    margin-left: 0;
+    text-align: center;
+
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 300;
+    text-transform: none;
+  }
+
+  .price__clock {
+    padding-left: 0;
+    padding-top: 34px;
+    width: 142px;
+    height: 139px;
+  }
+
+  .price__work-time br {
+    display: block;
+  }
+}

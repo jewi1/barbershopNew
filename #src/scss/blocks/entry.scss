@@ -1,0 +1,347 @@
+.entry {
+  width: 320px;
+  margin: 0 auto;
+
+  background-color: #f8f5f2;
+  color: #000000;
+
+  padding-bottom: 40px;
+}
+
+.entry__title {
+  margin-top: 0;
+  padding-top: 35px;
+
+  text-align: center;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.entry__input-text {
+  width: 260px;
+  padding-left: 20px;
+  padding-top: 12px;
+  padding-bottom: 13px;
+
+  display: block;
+  margin: 0 auto;
+
+  font: inherit;
+
+  border: 1px solid #e5ddd5;
+}
+
+.entry__input-text::placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.entry__input-textarea {
+  width: 258px;
+  min-height: 98px;
+  padding-left: 20px;
+  padding-top: 12px;
+
+  display: block;
+  margin: 0 auto;
+
+  font: inherit;
+
+  border: 1px solid #e5ddd5;
+}
+
+.entry__input-textarea::placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.entry__item--surname,
+.entry__item--name,
+.entry__item--patronymic {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.entry__item--patronymic {
+  margin-bottom: 32px;
+}
+
+.entry__item--phone,
+.entry__item--email {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.entry__item--email {
+  margin-bottom: 32px;
+}
+
+.entry__title--form {
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.entry__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.entry__list--beard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.entry__item--beard {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.entry__list--beard .entry__label {
+  padding-top: 70px;
+  padding-bottom: 13px;
+  display: block;
+  text-align: center;
+
+  position: relative;
+}
+
+.entry__list--beard .entry__label::before {
+  position: absolute;
+  content: "";
+  height: 48px;
+  width: 48px;
+  top: 0;
+  border: 1px solid #e6ded7;
+  border-radius: 50%;
+  left: 50%;
+  margin-left: -24px;
+
+  background-color: #ffffff;
+
+  cursor: pointer;
+}
+
+#admiral-id:checked ~ .entry__label--admiral::after,
+#forester-id:checked ~ .entry__label--forester::after,
+#polar-id:checked ~ .entry__label--polar::after,
+#boyar-id:checked ~ .entry__label--boyar::after,
+#sage-id:checked ~ .entry__label--sage::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border: 1px solid #e6ded7;
+  border-radius: 50%;
+  top: 16px;
+  left: 50%;
+  margin-left: -8px;
+}
+
+.entry__icon--beard {
+  margin-bottom: 25px;
+}
+
+.entry__title--services {
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+
+  margin-bottom: 40px;
+}
+
+.entry__item--services .entry__label {
+  padding-left: 80px;
+  margin-bottom: 38px;
+  display: block;
+  position: relative;
+}
+
+.entry__item--services .entry__label::before {
+  position: absolute;
+  content: "";
+
+  width: 34px;
+  height: 34px;
+
+  background-color: #ffffff;
+
+  border: 1px solid #e6ded7;
+
+  left: 20px;
+  top: -4px;
+
+  cursor: pointer;
+}
+
+#paint-beard-id:checked ~ .entry__label--paint-beard::after,
+#twist-mustache-id:checked ~ .entry__label--twist-mustache::after,
+#comb-beard-id:checked ~ .entry__label--comb-beard::after,
+#trim-temples-id:checked ~ .entry__label--trim-temples::after,
+#remove-gray-id:checked ~ .entry__label--remove-gray::after,
+#polish-bald-id:checked ~ .entry__label--polish-bald::after {
+  position: absolute;
+  content: "";
+
+  width: 22px;
+  height: 16px;
+
+  background-image: url("../img/checkbox-on.svg");
+
+  top: 6px;
+  left: 26px;
+}
+
+.entry__submit {
+  border: none;
+  width: 280px;
+  margin: 0 auto;
+  display: block;
+
+  background-color: #826550;
+  color: #ffffff;
+
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  padding-top: 13px;
+  padding-bottom: 12px;
+}
+
+@media (min-width: 768px) {
+  .entry {
+    width: auto;
+    margin: 0;
+  }
+
+  .entry__wrapper {
+    width: 640px;
+    margin: 0 auto;
+  }
+
+  .entry__contact {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .entry__item--surname,
+  .entry__item--name,
+  .entry__item--patronymic {
+    width: 213px;
+  }
+
+  .entry__item--surname .entry__input-text,
+  .entry__item--name .entry__input-text,
+  .entry__item--patronymic .entry__input-text {
+    width: 214px;
+    box-sizing: border-box;
+
+    margin: 0;
+  }
+
+  .entry__item--phone {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .entry__item--phone .entry__input-text {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .entry__item--email {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .entry__item--email .entry__input-text {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .entry__item--textarea {
+    width: 100%;
+  }
+
+  .entry__item--textarea .entry__input-textarea {
+    width: 100%;
+    min-height: 200px;
+    box-sizing: border-box;
+  }
+
+  .entry__list--services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .entry__services .entry__item {
+    width: 320px;
+  }
+
+  .entry__submit {
+    width: 100%;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .entry__wrapper {
+    width: 960px;
+  }
+
+  .entry__item--surname,
+  .entry__item--name,
+  .entry__item--patronymic {
+    width: 293px;
+
+    margin-right: 37px;
+  }
+
+  .entry__item--patronymic {
+    margin-right: 0;
+  }
+
+  .entry__item--surname .entry__input-text,
+  .entry__item--name .entry__input-text,
+  .entry__item--patronymic .entry__input-text {
+    width: 293px;
+    box-sizing: border-box;
+
+    margin: 0;
+  }
+
+  .entry__item--phone {
+    width: 460px;
+    margin-right: 35px;
+  }
+
+  .entry__item--phone .entry__input-text {
+    width: 460px;
+    box-sizing: border-box;
+  }
+
+  .entry__item--email {
+    width: 460px;
+  }
+
+  .entry__item--email .entry__input-text {
+    width: 460px;
+    box-sizing: border-box;
+  }
+}

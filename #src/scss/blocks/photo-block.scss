@@ -1,0 +1,200 @@
+.photo-work {
+  width: 320px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  color: #000000;
+
+  padding-bottom: 35px;
+}
+
+.photo-work__title {
+  margin: 0;
+  text-align: center;
+
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.photo-work__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.photo-work__picture {
+  // Временно для стилей
+  width: 280px;
+  height: 175px;
+  background-color: red;
+}
+
+.photo-work__picture--best {
+  // Временно для стилей
+  width: 280px;
+  height: 480px;
+  background-color: red;
+}
+
+.photo-work__text {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  border-right: 1px solid #e5ddd5;
+  border-bottom: 1px solid #e5ddd5;
+  border-left: 1px solid #e5ddd5;
+}
+
+.photo-work__item {
+  margin-bottom: 20px;
+}
+
+.photo-work__author {
+  font-size: 24px;
+  line-height: 27px;
+  font-weight: 700;
+
+  margin: 0;
+  padding-top: 20px;
+}
+
+.photo-work__option {
+  position: relative;
+  padding-left: 35px;
+
+  text-transform: uppercase;
+}
+
+.photo-work__option--moustache {
+  padding-left: 60px;
+}
+
+.photo-work__option::before {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 23px;
+  background-repeat: no-repeat;
+}
+
+.photo-work__option--haircut::before {
+  background-image: url("../img/haircut-icon.svg");
+  left: 0;
+}
+
+.photo-work__option--shaving::before {
+  background-image: url("../img/beard-icon.svg");
+  left: 0;
+}
+
+.photo-work__option--moustache::before {
+  background-image: url("../img/mustache-icon.svg");
+  left: 0;
+  top: 5px;
+}
+
+@media (min-width: 768px) {
+  .photo-work {
+    width: auto;
+    margin: 0;
+  }
+
+  .photo-work__wrapper {
+    width: 640px;
+    margin: 0 auto;
+  }
+
+  .photo-work__title {
+    text-align: left;
+  }
+
+  .photo-work__list {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .photo-work__picture {
+    // Временно для стилей
+    width: 280px;
+    height: 292px;
+    flex-shrink: 0;
+  }
+
+  .photo-work__picture--best {
+    // Временно для стилей
+    width: 280px;
+    height: 480px;
+    background-color: red;
+  }
+
+  .photo-work__item {
+    display: flex;
+  }
+
+  .photo-work__text {
+    width: 368px;
+    flex-shrink: 0;
+    padding-left: 50px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .photo-work__options {
+    margin-top: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photo-work__wrapper {
+    width: 960px;
+  }
+
+  .photo-work__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .photo-work__title {
+    font-size: 40px;
+  }
+
+  .photo-work__item {
+    width: 293px;
+    flex-direction: column;
+  }
+
+  .photo-work__item--best {
+    width: 960px;
+    flex-direction: row;
+  }
+
+  .photo-work__picture {
+    width: 293px;
+  }
+
+  .photo-work__picture--best {
+    width: 480px;
+  }
+
+  .photo-work__text {
+    width: 222px;
+    min-height: 246px;
+
+    padding-left: 35px;
+    padding-right: 36px;
+  }
+
+  .photo-work__item--best .photo-work__text {
+    width: 410px;
+  }
+}
