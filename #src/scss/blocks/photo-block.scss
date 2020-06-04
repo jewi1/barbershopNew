@@ -33,15 +33,13 @@
 .photo-work__picture {
   // Временно для стилей
   width: 280px;
-  height: 175px;
-  background-color: red;
+  max-height: 175px;
 }
 
 .photo-work__picture--best {
   // Временно для стилей
   width: 280px;
-  height: 480px;
-  background-color: red;
+  max-height: 480px;
 }
 
 .photo-work__text {
@@ -123,16 +121,15 @@
 
   .photo-work__picture {
     // Временно для стилей
-    width: 280px;
-    height: 292px;
+    width: 270px;
+    max-height: 294px;
     flex-shrink: 0;
   }
 
   .photo-work__picture--best {
     // Временно для стилей
-    width: 280px;
-    height: 480px;
-    background-color: red;
+    width: 270px;
+    max-height: 480px;
   }
 
   .photo-work__item {
@@ -146,6 +143,8 @@
 
     display: flex;
     flex-direction: column;
+
+    padding-bottom: 2px;
   }
 
   .photo-work__options {
@@ -190,7 +189,7 @@
     width: 222px;
     min-height: 246px;
 
-    padding-left: 35px;
+    padding-left: 33px;
     padding-right: 36px;
   }
 

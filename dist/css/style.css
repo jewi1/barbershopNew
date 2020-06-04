@@ -1067,14 +1067,12 @@ a {
 
 .photo-work__picture {
   width: 280px;
-  height: 175px;
-  background-color: red;
+  max-height: 175px;
 }
 
 .photo-work__picture--best {
   width: 280px;
-  height: 480px;
-  background-color: red;
+  max-height: 480px;
 }
 
 .photo-work__text {
@@ -1956,16 +1954,15 @@ a {
   }
 
   .photo-work__picture {
-    width: 280px;
-    height: 292px;
+    width: 270px;
+    max-height: 294px;
     -ms-flex-negative: 0;
         flex-shrink: 0;
   }
 
   .photo-work__picture--best {
-    width: 280px;
-    height: 480px;
-    background-color: red;
+    width: 270px;
+    max-height: 480px;
   }
 
   .photo-work__item {
@@ -1986,6 +1983,7 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-bottom: 2px;
   }
 
   .photo-work__options {
@@ -2494,7 +2492,7 @@ a {
   .photo-work__text {
     width: 222px;
     min-height: 246px;
-    padding-left: 35px;
+    padding-left: 33px;
     padding-right: 36px;
   }
 
